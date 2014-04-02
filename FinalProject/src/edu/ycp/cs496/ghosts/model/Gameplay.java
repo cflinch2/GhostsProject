@@ -105,6 +105,11 @@ public class Gameplay
 		nextGhost = Min + (int)(Math.random() * ((Max - Min) + 1));
 	}
 	
+	public void setNextGhost()
+	{
+		updateNextGhost();
+	}
+	
 	/*
 	 * if (nextGhost >= 1 && nextGhost <= 45)
 		{
