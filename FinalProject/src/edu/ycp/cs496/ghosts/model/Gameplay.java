@@ -110,6 +110,10 @@ public class Gameplay
 		updateNextGhost();
 	}
 	
+	public void pointless()
+	{
+		
+	}
 	/*
 	 * if (nextGhost >= 1 && nextGhost <= 45)
 		{
