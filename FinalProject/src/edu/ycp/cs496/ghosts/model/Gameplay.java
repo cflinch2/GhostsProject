@@ -23,6 +23,25 @@ public class Gameplay
 		
 	boolean gameActive = false;
 	int value;
+	
+	int numGridSpaces = 16;
+	
+	int[] myIntArray = new int[numGridSpaces];
+	
+	
+	/*
+	 * Sets game grid values each to 0, indicating they are empty
+	 * Should only be run at the start of the game or to reset the board
+	 */
+	public void initializeMyIntArray()
+	{
+		for (int i = 0; i < numGridSpaces; i++)
+		{
+			myIntArray[i] = 0;
+		}
+	}
+	
+	
 
 	public void incrementSpawnRate(int incrementValue)
 	{
@@ -110,10 +129,7 @@ public class Gameplay
 		updateNextGhost();
 	}
 	
-	public void pointless()
-	{
-		
-	}
+	
 	/*
 	 * if (nextGhost >= 1 && nextGhost <= 45)
 		{
