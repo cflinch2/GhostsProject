@@ -94,7 +94,13 @@ public class GameScreenActivity extends Activity {
 				image = new ImageView(getContext());
 				image.setLayoutParams(new GridView.LayoutParams(85, 85));
 				image.setScaleType(ImageView.ScaleType.CENTER_CROP);
-				image.setPadding(8, 8, 8, 8);
+				if(position == 1)
+				{
+					image.setPadding(8, 8, 8, 8);
+				}
+				
+				
+				
 			}else{
 				image = (ImageView) convertView;
 			}
